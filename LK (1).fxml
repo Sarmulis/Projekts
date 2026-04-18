@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: FF1493;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.FPController">
+   <children>
+      <SplitPane prefHeight="400.0" prefWidth="212.0" style="-fx-background-color: #5D0E41;">
+         <items>
+            <Label prefHeight="50.0" prefWidth="200.0" text="Log In " textFill="#f9d423">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+         </items>
+      </SplitPane>
+      <Label layoutX="236.0" layoutY="154.0" text="Username" textFill="#5d0e41">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="240.0" layoutY="207.0" text="Password" textFill="#5d0e41">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <PasswordField fx:id="pasw" layoutX="362.0" layoutY="205.0" onAction="#checkUser" promptText="Password" style="-fx-background-color: #f9d423;">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </PasswordField>
+      <TextField fx:id="usern" layoutX="362.0" layoutY="152.0" onAction="#checkUser" promptText="Username" style="-fx-background-color: #f9d423;">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </TextField>
+      <Label fx:id="wrongLogin" layoutX="246.0" layoutY="35.0" prefHeight="56.0" prefWidth="332.0" textFill="#5d0e41">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Button fx:id="loginButton" layoutX="386.0" layoutY="312.0" mnemonicParsing="false" onAction="#userLogin" style="-fx-background-color: #5D0E41;" text="Log In" textFill="#f9d423">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

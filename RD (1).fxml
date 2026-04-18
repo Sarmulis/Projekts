@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="600.0" style="-fx-background-color: FF1493;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.FPController">
+   <children>
+      <SplitPane prefHeight="600.0" prefWidth="176.0" style="-fx-background-color: #5D0E41;">
+         <items>
+            <Label text="Registration" textFill="#f9d423">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+         </items>
+      </SplitPane>
+      <Label layoutX="198.0" layoutY="131.0" text="First Name" textFill="#5d0e41" AnchorPane.leftAnchor="196.0" AnchorPane.topAnchor="235.0">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="nameTextField" layoutX="333.0" layoutY="239.0" prefHeight="25.0" prefWidth="236.0" promptText="FirstNamne" style="-fx-background-color: #f9d423;" AnchorPane.leftAnchor="340.0" AnchorPane.rightAnchor="15.0" AnchorPane.topAnchor="235.0">
+         <font>
+            <Font size="14.0" />
+         </font></TextField>
+      <Label layoutX="294.0" layoutY="6.0" text="Your Data" textFill="#5d0e41">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="199.0" layoutY="169.0" text="Last Name" textFill="#5d0e41" AnchorPane.leftAnchor="196.0" AnchorPane.topAnchor="295.0">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="surnameTextField" layoutX="334.0" layoutY="294.0" prefHeight="25.0" prefWidth="236.0" promptText="LastName" style="-fx-background-color: #f9d423;" AnchorPane.leftAnchor="340.0" AnchorPane.rightAnchor="14.0" AnchorPane.topAnchor="295.0">
+         <font>
+            <Font size="14.0" />
+         </font></TextField>
+      <Label layoutX="198.0" layoutY="276.0" text="Adress" textFill="#5d0e41" AnchorPane.leftAnchor="196.0" AnchorPane.topAnchor="470.0">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="adressTextField" layoutX="333.0" layoutY="469.0" prefHeight="25.0" prefWidth="236.0" style="-fx-background-color: #f9d423;" AnchorPane.leftAnchor="340.0" AnchorPane.rightAnchor="15.0" AnchorPane.topAnchor="470.0">
+         <font>
+            <Font size="14.0" />
+         </font></TextField>
+      <Label layoutX="195.0" layoutY="200.0" text="Email" textFill="#5d0e41" AnchorPane.leftAnchor="196.0" AnchorPane.topAnchor="355.0">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="199.0" layoutY="237.0" text="Phone number" textFill="#5d0e41" AnchorPane.leftAnchor="196.0" AnchorPane.topAnchor="415.0">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Button fx:id="submitButton" layoutX="333.0" layoutY="536.0" mnemonicParsing="false" onAction="#openGMB" prefHeight="39.0" prefWidth="254.0" style="-fx-background-color: #5d0e41;" text="Submit" textFill="#f9d423" AnchorPane.leftAnchor="340.0" AnchorPane.rightAnchor="15.0">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <TextField fx:id="emailTextField" layoutX="334.0" layoutY="357.0" prefHeight="25.0" prefWidth="236.0" style="-fx-background-color: #f9d423;" AnchorPane.leftAnchor="340.0" AnchorPane.rightAnchor="14.0" AnchorPane.topAnchor="355.0">
+         <font>
+            <Font size="14.0" />
+         </font></TextField>
+      <TextField fx:id="phoneNumberTextField" layoutX="334.0" layoutY="414.0" prefHeight="25.0" prefWidth="236.0" style="-fx-background-color: #f9d423;" AnchorPane.leftAnchor="340.0" AnchorPane.rightAnchor="14.0" AnchorPane.topAnchor="415.0">
+         <font>
+            <Font size="14.0" />
+         </font></TextField>
+      <Separator layoutX="198.0" layoutY="40.0" prefHeight="3.0" prefWidth="393.0" style="-fx-background-color: #f9d423;" AnchorPane.leftAnchor="200.0" AnchorPane.rightAnchor="15.0" AnchorPane.topAnchor="40.0" />
+      <Separator layoutX="200.0" layoutY="519.0" prefHeight="3.0" prefWidth="385.0" style="-fx-background-color: #f9d423;" AnchorPane.leftAnchor="200.0" AnchorPane.rightAnchor="15.0" />
+      <TextField fx:id="unameTextField" layoutX="333.0" layoutY="65.0" prefHeight="25.0" prefWidth="254.0" promptText="UserName" style="-fx-background-color: #f9d423;" AnchorPane.leftAnchor="340.0" AnchorPane.rightAnchor="15.0" AnchorPane.topAnchor="65.0">
+         <font>
+            <Font size="14.0" />
+         </font></TextField>
+      <Label layoutX="196.0" layoutY="59.0" text="UserName" textFill="#5d0e41" AnchorPane.leftAnchor="196.0" AnchorPane.topAnchor="65.0">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="196.0" layoutY="98.0" text="Password" textFill="#5d0e41" AnchorPane.leftAnchor="196.0" AnchorPane.topAnchor="115.0">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="202.0" layoutY="167.0" text="Password confirm" textFill="#5d0e41" AnchorPane.leftAnchor="196.0" AnchorPane.topAnchor="180.0">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <PasswordField fx:id="pasPasswordField" layoutX="333.0" layoutY="116.0" prefHeight="25.0" prefWidth="254.0" promptText="Password" style="-fx-background-color: #f9d423;" AnchorPane.leftAnchor="340.0" AnchorPane.rightAnchor="15.0" AnchorPane.topAnchor="115.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </PasswordField>
+      <PasswordField fx:id="confPasswordField" layoutX="340.0" layoutY="177.0" prefHeight="25.0" prefWidth="254.0" promptText="Confirm Password" style="-fx-background-color: #f9d423;" AnchorPane.leftAnchor="340.0" AnchorPane.rightAnchor="15.0" AnchorPane.topAnchor="180.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </PasswordField>
+   </children>
+</AnchorPane>
